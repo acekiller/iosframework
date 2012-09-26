@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0741121612E2AA0072DFA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741111612E2AA0072DFA4 /* UIKit.framework */; };
+		6A0741141612E2AA0072DFA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741131612E2AA0072DFA4 /* Foundation.framework */; };
+		6A0741161612E2AA0072DFA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741151612E2AA0072DFA4 /* CoreGraphics.framework */; };
+		6A07411C1612E2AA0072DFA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A07411A1612E2AA0072DFA4 /* InfoPlist.strings */; };
+		6A07411E1612E2AA0072DFA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07411D1612E2AA0072DFA4 /* main.m */; };
+		6A0741241612E2AA0072DFA4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0741231612E2AA0072DFA4 /* Default.png */; };
+		6A0741261612E2AA0072DFA4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0741251612E2AA0072DFA4 /* Default@2x.png */; };
+		6A0741281612E2AA0072DFA4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0741271612E2AA0072DFA4 /* Default-568h@2x.png */; };
+		6A07412B1612E2AA0072DFA4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0741291612E2AA0072DFA4 /* MainStoryboard_iPhone.storyboard */; };
+		6A07412E1612E2AA0072DFA4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A07412C1612E2AA0072DFA4 /* MainStoryboard_iPad.storyboard */; };
+		6A0741421612E3CB0072DFA4 /* libAfariaSLL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07413B1612E3CB0072DFA4 /* libAfariaSLL.a */; };
+		6A0741431612E3CB0072DFA4 /* libclientrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07413C1612E3CB0072DFA4 /* libclientrt.a */; };
+		6A0741441612E3CB0072DFA4 /* libDatavault.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07413D1612E3CB0072DFA4 /* libDatavault.a */; };
+		6A0741451612E3CB0072DFA4 /* libMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07413E1612E3CB0072DFA4 /* libMO.a */; };
+		6A0741461612E3CB0072DFA4 /* libsupcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07413F1612E3CB0072DFA4 /* libsupcore.a */; };
+		6A0741471612E3CB0072DFA4 /* libSUPObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741401612E3CB0072DFA4 /* libSUPObj.a */; };
+		6A0741481612E3CB0072DFA4 /* libsupUltralite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741411612E3CB0072DFA4 /* libsupUltralite.a */; };
+		6A07414B1612E40A0072DFA4 /* CallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07414A1612E40A0072DFA4 /* CallbackHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A07414E1612E44F0072DFA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07414D1612E44F0072DFA4 /* AppDelegate.m */; };
+		6A0741521612E4820072DFA4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741511612E4820072DFA4 /* LoginViewController.m */; };
+		6A0741541612E4E10072DFA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741531612E4E10072DFA4 /* SystemConfiguration.framework */; };
+		6A0741561612E4EA0072DFA4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741551612E4EA0072DFA4 /* CFNetwork.framework */; };
+		6A0741581612E4F40072DFA4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741571612E4F40072DFA4 /* Security.framework */; };
+		6A07415A1612E4FA0072DFA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741591612E4FA0072DFA4 /* QuartzCore.framework */; };
+		6A07415C1612E5040072DFA4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07415B1612E5040072DFA4 /* CoreFoundation.framework */; };
+		6A07415E1612E50D0072DFA4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07415D1612E50D0072DFA4 /* AddressBook.framework */; };
+		6A0741601612E5370072DFA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07415F1612E5370072DFA4 /* libz.dylib */; };
+		6A0741621612E5430072DFA4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741611612E5430072DFA4 /* libstdc++.dylib */; };
+		6A0741641612E5550072DFA4 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741631612E5550072DFA4 /* libicucore.A.dylib */; };
+		6A0741661612E5700072DFA4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0741651612E5700072DFA4 /* MobileCoreServices.framework */; };
+		6A0741C41612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741981612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741C51612E6FE0072DFA4 /* HR_SuiteChangeLogKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741991612E6FE0072DFA4 /* HR_SuiteChangeLogKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741C61612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419A1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741C71612E6FE0072DFA4 /* HR_SuiteJobManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419B1612E6FE0072DFA4 /* HR_SuiteJobManagement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741C81612E6FE0072DFA4 /* HR_SuiteJobs.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419C1612E6FE0072DFA4 /* HR_SuiteJobs.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741C91612E6FE0072DFA4 /* HR_SuiteKeyGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419D1612E6FE0072DFA4 /* HR_SuiteKeyGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CA1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419E1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CB1612E6FE0072DFA4 /* HR_SuiteKeyPackageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07419F1612E6FE0072DFA4 /* HR_SuiteKeyPackageName.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CC1612E6FE0072DFA4 /* HR_SuiteLeaveRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A01612E6FE0072DFA4 /* HR_SuiteLeaveRequests.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CD1612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A11612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CE1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A21612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741CF1612E6FE0072DFA4 /* HR_SuiteLoggerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A31612E6FE0072DFA4 /* HR_SuiteLoggerImpl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D01612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A41612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D11612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A51612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D21612E6FE0072DFA4 /* HR_SuiteOperationReplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A61612E6FE0072DFA4 /* HR_SuiteOperationReplay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D31612E6FE0072DFA4 /* HR_SuitePackageProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A71612E6FE0072DFA4 /* HR_SuitePackageProperties.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D41612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A81612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D51612E6FE0072DFA4 /* HR_SuiteSISSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741A91612E6FE0072DFA4 /* HR_SuiteSISSubscription.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D61612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741AA1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D71612E6FE0072DFA4 /* HR_SuiteTimesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741AB1612E6FE0072DFA4 /* HR_SuiteTimesheet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D81612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741AC1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741D91612E6FE0072DFA4 /* HR_SuiteUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741AD1612E6FE0072DFA4 /* HR_SuiteUsers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DA1612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741AF1612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DB1612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B01612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DC1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B11612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DD1612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B21612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DE1612E6FE0072DFA4 /* HR_SuiteJobsMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B31612E6FE0072DFA4 /* HR_SuiteJobsMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741DF1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B41612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E01612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B51612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E11612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B61612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E21612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B71612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E31612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B81612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E41612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741B91612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E51612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BA1612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E61612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BB1612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E71612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BC1612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E81612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BD1612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741E91612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BE1612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741EA1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741BF1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741EB1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741C01612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741EC1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741C11612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741ED1612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741C21612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A0741EE1612E6FE0072DFA4 /* HR_SuiteUsersMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0741C31612E6FE0072DFA4 /* HR_SuiteUsersMetaData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A07410D1612E2AA0072DFA4 /* RapidSUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidSUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0741111612E2AA0072DFA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A0741131612E2AA0072DFA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A0741151612E2AA0072DFA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A0741191612E2AA0072DFA4 /* RapidSUP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RapidSUP-Info.plist"; sourceTree = "<group>"; };
+		6A07411B1612E2AA0072DFA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A07411D1612E2AA0072DFA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A07411F1612E2AA0072DFA4 /* RapidSUP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RapidSUP-Prefix.pch"; sourceTree = "<group>"; };
+		6A0741231612E2AA0072DFA4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6A0741251612E2AA0072DFA4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6A0741271612E2AA0072DFA4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6A07412A1612E2AA0072DFA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		6A07412D1612E2AA0072DFA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		6A07413B1612E3CB0072DFA4 /* libAfariaSLL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAfariaSLL.a; sourceTree = "<group>"; };
+		6A07413C1612E3CB0072DFA4 /* libclientrt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libclientrt.a; sourceTree = "<group>"; };
+		6A07413D1612E3CB0072DFA4 /* libDatavault.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDatavault.a; sourceTree = "<group>"; };
+		6A07413E1612E3CB0072DFA4 /* libMO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMO.a; sourceTree = "<group>"; };
+		6A07413F1612E3CB0072DFA4 /* libsupcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsupcore.a; sourceTree = "<group>"; };
+		6A0741401612E3CB0072DFA4 /* libSUPObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSUPObj.a; sourceTree = "<group>"; };
+		6A0741411612E3CB0072DFA4 /* libsupUltralite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsupUltralite.a; sourceTree = "<group>"; };
+		6A0741491612E40A0072DFA4 /* CallbackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackHandler.h; sourceTree = "<group>"; };
+		6A07414A1612E40A0072DFA4 /* CallbackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallbackHandler.m; sourceTree = "<group>"; };
+		6A07414C1612E44F0072DFA4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A07414D1612E44F0072DFA4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A0741501612E4820072DFA4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6A0741511612E4820072DFA4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6A0741531612E4E10072DFA4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6A0741551612E4EA0072DFA4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6A0741571612E4F40072DFA4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6A0741591612E4FA0072DFA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6A07415B1612E5040072DFA4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6A07415D1612E50D0072DFA4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6A07415F1612E5370072DFA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6A0741611612E5430072DFA4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		6A0741631612E5550072DFA4 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		6A0741651612E5700072DFA4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6A07416A1612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteChangeLogImpl.h; sourceTree = "<group>"; };
+		6A07416B1612E6FE0072DFA4 /* HR_SuiteChangeLogKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteChangeLogKey.h; sourceTree = "<group>"; };
+		6A07416C1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteHR_SuiteDB.h; sourceTree = "<group>"; };
+		6A07416D1612E6FE0072DFA4 /* HR_SuiteJobManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteJobManagement.h; sourceTree = "<group>"; };
+		6A07416E1612E6FE0072DFA4 /* HR_SuiteJobs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteJobs.h; sourceTree = "<group>"; };
+		6A07416F1612E6FE0072DFA4 /* HR_SuiteKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyGenerator.h; sourceTree = "<group>"; };
+		6A0741701612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyGeneratorPK.h; sourceTree = "<group>"; };
+		6A0741711612E6FE0072DFA4 /* HR_SuiteKeyPackageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyPackageName.h; sourceTree = "<group>"; };
+		6A0741721612E6FE0072DFA4 /* HR_SuiteLeaveRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLeaveRequests.h; sourceTree = "<group>"; };
+		6A0741731612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLocalKeyGenerator.h; sourceTree = "<group>"; };
+		6A0741741612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLocalKeyGeneratorPK.h; sourceTree = "<group>"; };
+		6A0741751612E6FE0072DFA4 /* HR_SuiteLoggerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLoggerImpl.h; sourceTree = "<group>"; };
+		6A0741761612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLogRecordImpl.h; sourceTree = "<group>"; };
+		6A0741771612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteOfflineAuthentication.h; sourceTree = "<group>"; };
+		6A0741781612E6FE0072DFA4 /* HR_SuiteOperationReplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteOperationReplay.h; sourceTree = "<group>"; };
+		6A0741791612E6FE0072DFA4 /* HR_SuitePackageProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuitePackageProperties.h; sourceTree = "<group>"; };
+		6A07417A1612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuitePersonalizationParameters.h; sourceTree = "<group>"; };
+		6A07417B1612E6FE0072DFA4 /* HR_SuiteSISSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteSISSubscription.h; sourceTree = "<group>"; };
+		6A07417C1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteSISSubscriptionKey.h; sourceTree = "<group>"; };
+		6A07417D1612E6FE0072DFA4 /* HR_SuiteTimesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteTimesheet.h; sourceTree = "<group>"; };
+		6A07417E1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteTimesheetApprovals.h; sourceTree = "<group>"; };
+		6A07417F1612E6FE0072DFA4 /* HR_SuiteUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteUsers.h; sourceTree = "<group>"; };
+		6A0741811612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteChangeLogImplMetaData.h; sourceTree = "<group>"; };
+		6A0741821612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteChangeLogKeyMetaData.h; sourceTree = "<group>"; };
+		6A0741831612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteHR_SuiteDBMetaData.h; sourceTree = "<group>"; };
+		6A0741841612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteJobManagementMetaData.h; sourceTree = "<group>"; };
+		6A0741851612E6FE0072DFA4 /* HR_SuiteJobsMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteJobsMetaData.h; sourceTree = "<group>"; };
+		6A0741861612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyGeneratorMetaData.h; sourceTree = "<group>"; };
+		6A0741871612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyGeneratorPKMetaData.h; sourceTree = "<group>"; };
+		6A0741881612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteKeyPackageNameMetaData.h; sourceTree = "<group>"; };
+		6A0741891612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLeaveRequestsMetaData.h; sourceTree = "<group>"; };
+		6A07418A1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLocalKeyGeneratorMetaData.h; sourceTree = "<group>"; };
+		6A07418B1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLocalKeyGeneratorPKMetaData.h; sourceTree = "<group>"; };
+		6A07418C1612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteLogRecordImplMetaData.h; sourceTree = "<group>"; };
+		6A07418D1612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteOfflineAuthenticationMetaData.h; sourceTree = "<group>"; };
+		6A07418E1612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteOperationReplayMetaData.h; sourceTree = "<group>"; };
+		6A07418F1612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuitePackagePropertiesMetaData.h; sourceTree = "<group>"; };
+		6A0741901612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuitePersonalizationParametersMetaData.h; sourceTree = "<group>"; };
+		6A0741911612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteSISSubscriptionKeyMetaData.h; sourceTree = "<group>"; };
+		6A0741921612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteSISSubscriptionMetaData.h; sourceTree = "<group>"; };
+		6A0741931612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteTimesheetApprovalsMetaData.h; sourceTree = "<group>"; };
+		6A0741941612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteTimesheetMetaData.h; sourceTree = "<group>"; };
+		6A0741951612E6FE0072DFA4 /* HR_SuiteUsersMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HR_SuiteUsersMetaData.h; sourceTree = "<group>"; };
+		6A0741981612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteChangeLogImpl.m; sourceTree = "<group>"; };
+		6A0741991612E6FE0072DFA4 /* HR_SuiteChangeLogKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteChangeLogKey.m; sourceTree = "<group>"; };
+		6A07419A1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteHR_SuiteDB.m; sourceTree = "<group>"; };
+		6A07419B1612E6FE0072DFA4 /* HR_SuiteJobManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteJobManagement.m; sourceTree = "<group>"; };
+		6A07419C1612E6FE0072DFA4 /* HR_SuiteJobs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteJobs.m; sourceTree = "<group>"; };
+		6A07419D1612E6FE0072DFA4 /* HR_SuiteKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyGenerator.m; sourceTree = "<group>"; };
+		6A07419E1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyGeneratorPK.m; sourceTree = "<group>"; };
+		6A07419F1612E6FE0072DFA4 /* HR_SuiteKeyPackageName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyPackageName.m; sourceTree = "<group>"; };
+		6A0741A01612E6FE0072DFA4 /* HR_SuiteLeaveRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLeaveRequests.m; sourceTree = "<group>"; };
+		6A0741A11612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLocalKeyGenerator.m; sourceTree = "<group>"; };
+		6A0741A21612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLocalKeyGeneratorPK.m; sourceTree = "<group>"; };
+		6A0741A31612E6FE0072DFA4 /* HR_SuiteLoggerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLoggerImpl.m; sourceTree = "<group>"; };
+		6A0741A41612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLogRecordImpl.m; sourceTree = "<group>"; };
+		6A0741A51612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteOfflineAuthentication.m; sourceTree = "<group>"; };
+		6A0741A61612E6FE0072DFA4 /* HR_SuiteOperationReplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteOperationReplay.m; sourceTree = "<group>"; };
+		6A0741A71612E6FE0072DFA4 /* HR_SuitePackageProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuitePackageProperties.m; sourceTree = "<group>"; };
+		6A0741A81612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuitePersonalizationParameters.m; sourceTree = "<group>"; };
+		6A0741A91612E6FE0072DFA4 /* HR_SuiteSISSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteSISSubscription.m; sourceTree = "<group>"; };
+		6A0741AA1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteSISSubscriptionKey.m; sourceTree = "<group>"; };
+		6A0741AB1612E6FE0072DFA4 /* HR_SuiteTimesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteTimesheet.m; sourceTree = "<group>"; };
+		6A0741AC1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteTimesheetApprovals.m; sourceTree = "<group>"; };
+		6A0741AD1612E6FE0072DFA4 /* HR_SuiteUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteUsers.m; sourceTree = "<group>"; };
+		6A0741AF1612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteChangeLogImplMetaData.m; sourceTree = "<group>"; };
+		6A0741B01612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteChangeLogKeyMetaData.m; sourceTree = "<group>"; };
+		6A0741B11612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteHR_SuiteDBMetaData.m; sourceTree = "<group>"; };
+		6A0741B21612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteJobManagementMetaData.m; sourceTree = "<group>"; };
+		6A0741B31612E6FE0072DFA4 /* HR_SuiteJobsMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteJobsMetaData.m; sourceTree = "<group>"; };
+		6A0741B41612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyGeneratorMetaData.m; sourceTree = "<group>"; };
+		6A0741B51612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyGeneratorPKMetaData.m; sourceTree = "<group>"; };
+		6A0741B61612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteKeyPackageNameMetaData.m; sourceTree = "<group>"; };
+		6A0741B71612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLeaveRequestsMetaData.m; sourceTree = "<group>"; };
+		6A0741B81612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLocalKeyGeneratorMetaData.m; sourceTree = "<group>"; };
+		6A0741B91612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLocalKeyGeneratorPKMetaData.m; sourceTree = "<group>"; };
+		6A0741BA1612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteLogRecordImplMetaData.m; sourceTree = "<group>"; };
+		6A0741BB1612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteOfflineAuthenticationMetaData.m; sourceTree = "<group>"; };
+		6A0741BC1612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteOperationReplayMetaData.m; sourceTree = "<group>"; };
+		6A0741BD1612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuitePackagePropertiesMetaData.m; sourceTree = "<group>"; };
+		6A0741BE1612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuitePersonalizationParametersMetaData.m; sourceTree = "<group>"; };
+		6A0741BF1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteSISSubscriptionKeyMetaData.m; sourceTree = "<group>"; };
+		6A0741C01612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteSISSubscriptionMetaData.m; sourceTree = "<group>"; };
+		6A0741C11612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteTimesheetApprovalsMetaData.m; sourceTree = "<group>"; };
+		6A0741C21612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteTimesheetMetaData.m; sourceTree = "<group>"; };
+		6A0741C31612E6FE0072DFA4 /* HR_SuiteUsersMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HR_SuiteUsersMetaData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A07410A1612E2AA0072DFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0741661612E5700072DFA4 /* MobileCoreServices.framework in Frameworks */,
+				6A0741641612E5550072DFA4 /* libicucore.A.dylib in Frameworks */,
+				6A0741621612E5430072DFA4 /* libstdc++.dylib in Frameworks */,
+				6A0741601612E5370072DFA4 /* libz.dylib in Frameworks */,
+				6A0741161612E2AA0072DFA4 /* CoreGraphics.framework in Frameworks */,
+				6A0741141612E2AA0072DFA4 /* Foundation.framework in Frameworks */,
+				6A0741121612E2AA0072DFA4 /* UIKit.framework in Frameworks */,
+				6A07415E1612E50D0072DFA4 /* AddressBook.framework in Frameworks */,
+				6A07415C1612E5040072DFA4 /* CoreFoundation.framework in Frameworks */,
+				6A07415A1612E4FA0072DFA4 /* QuartzCore.framework in Frameworks */,
+				6A0741581612E4F40072DFA4 /* Security.framework in Frameworks */,
+				6A0741561612E4EA0072DFA4 /* CFNetwork.framework in Frameworks */,
+				6A0741541612E4E10072DFA4 /* SystemConfiguration.framework in Frameworks */,
+				6A0741421612E3CB0072DFA4 /* libAfariaSLL.a in Frameworks */,
+				6A0741431612E3CB0072DFA4 /* libclientrt.a in Frameworks */,
+				6A0741441612E3CB0072DFA4 /* libDatavault.a in Frameworks */,
+				6A0741451612E3CB0072DFA4 /* libMO.a in Frameworks */,
+				6A0741461612E3CB0072DFA4 /* libsupcore.a in Frameworks */,
+				6A0741471612E3CB0072DFA4 /* libSUPObj.a in Frameworks */,
+				6A0741481612E3CB0072DFA4 /* libsupUltralite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A0741021612E2AA0072DFA4 = {
+			isa = PBXGroup;
+			children = (
+				6A0741671612E6FE0072DFA4 /* Generated Code */,
+				6A0741171612E2AA0072DFA4 /* RapidSUP */,
+				6A0741101612E2AA0072DFA4 /* Frameworks */,
+				6A07410E1612E2AA0072DFA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A07410E1612E2AA0072DFA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A07410D1612E2AA0072DFA4 /* RapidSUP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A0741101612E2AA0072DFA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741651612E5700072DFA4 /* MobileCoreServices.framework */,
+				6A0741631612E5550072DFA4 /* libicucore.A.dylib */,
+				6A0741611612E5430072DFA4 /* libstdc++.dylib */,
+				6A07415F1612E5370072DFA4 /* libz.dylib */,
+				6A07415D1612E50D0072DFA4 /* AddressBook.framework */,
+				6A07415B1612E5040072DFA4 /* CoreFoundation.framework */,
+				6A0741591612E4FA0072DFA4 /* QuartzCore.framework */,
+				6A0741571612E4F40072DFA4 /* Security.framework */,
+				6A0741551612E4EA0072DFA4 /* CFNetwork.framework */,
+				6A0741531612E4E10072DFA4 /* SystemConfiguration.framework */,
+				6A0741111612E2AA0072DFA4 /* UIKit.framework */,
+				6A0741131612E2AA0072DFA4 /* Foundation.framework */,
+				6A0741151612E2AA0072DFA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0741171612E2AA0072DFA4 /* RapidSUP */ = {
+			isa = PBXGroup;
+			children = (
+				6A07414C1612E44F0072DFA4 /* AppDelegate.h */,
+				6A07414D1612E44F0072DFA4 /* AppDelegate.m */,
+				6A0741491612E40A0072DFA4 /* CallbackHandler.h */,
+				6A07414A1612E40A0072DFA4 /* CallbackHandler.m */,
+				6A0741501612E4820072DFA4 /* LoginViewController.h */,
+				6A0741511612E4820072DFA4 /* LoginViewController.m */,
+				6A0741291612E2AA0072DFA4 /* MainStoryboard_iPhone.storyboard */,
+				6A07412C1612E2AA0072DFA4 /* MainStoryboard_iPad.storyboard */,
+				6A0741181612E2AA0072DFA4 /* Supporting Files */,
+			);
+			path = RapidSUP;
+			sourceTree = "<group>";
+		};
+		6A0741181612E2AA0072DFA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A07413B1612E3CB0072DFA4 /* libAfariaSLL.a */,
+				6A07413C1612E3CB0072DFA4 /* libclientrt.a */,
+				6A07413D1612E3CB0072DFA4 /* libDatavault.a */,
+				6A07413E1612E3CB0072DFA4 /* libMO.a */,
+				6A07413F1612E3CB0072DFA4 /* libsupcore.a */,
+				6A0741401612E3CB0072DFA4 /* libSUPObj.a */,
+				6A0741411612E3CB0072DFA4 /* libsupUltralite.a */,
+				6A0741191612E2AA0072DFA4 /* RapidSUP-Info.plist */,
+				6A07411A1612E2AA0072DFA4 /* InfoPlist.strings */,
+				6A07411D1612E2AA0072DFA4 /* main.m */,
+				6A07411F1612E2AA0072DFA4 /* RapidSUP-Prefix.pch */,
+				6A0741231612E2AA0072DFA4 /* Default.png */,
+				6A0741251612E2AA0072DFA4 /* Default@2x.png */,
+				6A0741271612E2AA0072DFA4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A0741671612E6FE0072DFA4 /* Generated Code */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741681612E6FE0072DFA4 /* includes */,
+				6A0741961612E6FE0072DFA4 /* src */,
+			);
+			path = "Generated Code";
+			sourceTree = "<group>";
+		};
+		6A0741681612E6FE0072DFA4 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741691612E6FE0072DFA4 /* HR_Suite */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		6A0741691612E6FE0072DFA4 /* HR_Suite */ = {
+			isa = PBXGroup;
+			children = (
+				6A07416A1612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.h */,
+				6A07416B1612E6FE0072DFA4 /* HR_SuiteChangeLogKey.h */,
+				6A07416C1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.h */,
+				6A07416D1612E6FE0072DFA4 /* HR_SuiteJobManagement.h */,
+				6A07416E1612E6FE0072DFA4 /* HR_SuiteJobs.h */,
+				6A07416F1612E6FE0072DFA4 /* HR_SuiteKeyGenerator.h */,
+				6A0741701612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.h */,
+				6A0741711612E6FE0072DFA4 /* HR_SuiteKeyPackageName.h */,
+				6A0741721612E6FE0072DFA4 /* HR_SuiteLeaveRequests.h */,
+				6A0741731612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.h */,
+				6A0741741612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.h */,
+				6A0741751612E6FE0072DFA4 /* HR_SuiteLoggerImpl.h */,
+				6A0741761612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.h */,
+				6A0741771612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.h */,
+				6A0741781612E6FE0072DFA4 /* HR_SuiteOperationReplay.h */,
+				6A0741791612E6FE0072DFA4 /* HR_SuitePackageProperties.h */,
+				6A07417A1612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.h */,
+				6A07417B1612E6FE0072DFA4 /* HR_SuiteSISSubscription.h */,
+				6A07417C1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.h */,
+				6A07417D1612E6FE0072DFA4 /* HR_SuiteTimesheet.h */,
+				6A07417E1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.h */,
+				6A07417F1612E6FE0072DFA4 /* HR_SuiteUsers.h */,
+				6A0741801612E6FE0072DFA4 /* internal */,
+			);
+			path = HR_Suite;
+			sourceTree = "<group>";
+		};
+		6A0741801612E6FE0072DFA4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741811612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.h */,
+				6A0741821612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.h */,
+				6A0741831612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.h */,
+				6A0741841612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.h */,
+				6A0741851612E6FE0072DFA4 /* HR_SuiteJobsMetaData.h */,
+				6A0741861612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.h */,
+				6A0741871612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.h */,
+				6A0741881612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.h */,
+				6A0741891612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.h */,
+				6A07418A1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.h */,
+				6A07418B1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.h */,
+				6A07418C1612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.h */,
+				6A07418D1612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.h */,
+				6A07418E1612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.h */,
+				6A07418F1612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.h */,
+				6A0741901612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.h */,
+				6A0741911612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.h */,
+				6A0741921612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.h */,
+				6A0741931612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.h */,
+				6A0741941612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.h */,
+				6A0741951612E6FE0072DFA4 /* HR_SuiteUsersMetaData.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		6A0741961612E6FE0072DFA4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741971612E6FE0072DFA4 /* HR_Suite */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6A0741971612E6FE0072DFA4 /* HR_Suite */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741981612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.m */,
+				6A0741991612E6FE0072DFA4 /* HR_SuiteChangeLogKey.m */,
+				6A07419A1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.m */,
+				6A07419B1612E6FE0072DFA4 /* HR_SuiteJobManagement.m */,
+				6A07419C1612E6FE0072DFA4 /* HR_SuiteJobs.m */,
+				6A07419D1612E6FE0072DFA4 /* HR_SuiteKeyGenerator.m */,
+				6A07419E1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.m */,
+				6A07419F1612E6FE0072DFA4 /* HR_SuiteKeyPackageName.m */,
+				6A0741A01612E6FE0072DFA4 /* HR_SuiteLeaveRequests.m */,
+				6A0741A11612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.m */,
+				6A0741A21612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.m */,
+				6A0741A31612E6FE0072DFA4 /* HR_SuiteLoggerImpl.m */,
+				6A0741A41612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.m */,
+				6A0741A51612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.m */,
+				6A0741A61612E6FE0072DFA4 /* HR_SuiteOperationReplay.m */,
+				6A0741A71612E6FE0072DFA4 /* HR_SuitePackageProperties.m */,
+				6A0741A81612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.m */,
+				6A0741A91612E6FE0072DFA4 /* HR_SuiteSISSubscription.m */,
+				6A0741AA1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.m */,
+				6A0741AB1612E6FE0072DFA4 /* HR_SuiteTimesheet.m */,
+				6A0741AC1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.m */,
+				6A0741AD1612E6FE0072DFA4 /* HR_SuiteUsers.m */,
+				6A0741AE1612E6FE0072DFA4 /* internal */,
+			);
+			path = HR_Suite;
+			sourceTree = "<group>";
+		};
+		6A0741AE1612E6FE0072DFA4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				6A0741AF1612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.m */,
+				6A0741B01612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.m */,
+				6A0741B11612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.m */,
+				6A0741B21612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.m */,
+				6A0741B31612E6FE0072DFA4 /* HR_SuiteJobsMetaData.m */,
+				6A0741B41612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.m */,
+				6A0741B51612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.m */,
+				6A0741B61612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.m */,
+				6A0741B71612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.m */,
+				6A0741B81612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.m */,
+				6A0741B91612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.m */,
+				6A0741BA1612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.m */,
+				6A0741BB1612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.m */,
+				6A0741BC1612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.m */,
+				6A0741BD1612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.m */,
+				6A0741BE1612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.m */,
+				6A0741BF1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.m */,
+				6A0741C01612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.m */,
+				6A0741C11612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.m */,
+				6A0741C21612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.m */,
+				6A0741C31612E6FE0072DFA4 /* HR_SuiteUsersMetaData.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A07410C1612E2AA0072DFA4 /* RapidSUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0741341612E2AA0072DFA4 /* Build configuration list for PBXNativeTarget "RapidSUP" */;
+			buildPhases = (
+				6A0741091612E2AA0072DFA4 /* Sources */,
+				6A07410A1612E2AA0072DFA4 /* Frameworks */,
+				6A07410B1612E2AA0072DFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapidSUP;
+			productName = RapidSUP;
+			productReference = 6A07410D1612E2AA0072DFA4 /* RapidSUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A0741041612E2AA0072DFA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Andrew Furusawa";
+			};
+			buildConfigurationList = 6A0741071612E2AA0072DFA4 /* Build configuration list for PBXProject "RapidSUP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+				French,
+				German,
+				Spanish,
+			);
+			mainGroup = 6A0741021612E2AA0072DFA4;
+			productRefGroup = 6A07410E1612E2AA0072DFA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A07410C1612E2AA0072DFA4 /* RapidSUP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A07410B1612E2AA0072DFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A07411C1612E2AA0072DFA4 /* InfoPlist.strings in Resources */,
+				6A0741241612E2AA0072DFA4 /* Default.png in Resources */,
+				6A0741261612E2AA0072DFA4 /* Default@2x.png in Resources */,
+				6A0741281612E2AA0072DFA4 /* Default-568h@2x.png in Resources */,
+				6A07412B1612E2AA0072DFA4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				6A07412E1612E2AA0072DFA4 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A0741091612E2AA0072DFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A07411E1612E2AA0072DFA4 /* main.m in Sources */,
+				6A07414E1612E44F0072DFA4 /* AppDelegate.m in Sources */,
+				6A07414B1612E40A0072DFA4 /* CallbackHandler.m in Sources */,
+				6A0741521612E4820072DFA4 /* LoginViewController.m in Sources */,
+				6A0741C41612E6FE0072DFA4 /* HR_SuiteChangeLogImpl.m in Sources */,
+				6A0741C51612E6FE0072DFA4 /* HR_SuiteChangeLogKey.m in Sources */,
+				6A0741C61612E6FE0072DFA4 /* HR_SuiteHR_SuiteDB.m in Sources */,
+				6A0741C71612E6FE0072DFA4 /* HR_SuiteJobManagement.m in Sources */,
+				6A0741C81612E6FE0072DFA4 /* HR_SuiteJobs.m in Sources */,
+				6A0741C91612E6FE0072DFA4 /* HR_SuiteKeyGenerator.m in Sources */,
+				6A0741CA1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPK.m in Sources */,
+				6A0741CB1612E6FE0072DFA4 /* HR_SuiteKeyPackageName.m in Sources */,
+				6A0741CC1612E6FE0072DFA4 /* HR_SuiteLeaveRequests.m in Sources */,
+				6A0741CD1612E6FE0072DFA4 /* HR_SuiteLocalKeyGenerator.m in Sources */,
+				6A0741CE1612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPK.m in Sources */,
+				6A0741CF1612E6FE0072DFA4 /* HR_SuiteLoggerImpl.m in Sources */,
+				6A0741D01612E6FE0072DFA4 /* HR_SuiteLogRecordImpl.m in Sources */,
+				6A0741D11612E6FE0072DFA4 /* HR_SuiteOfflineAuthentication.m in Sources */,
+				6A0741D21612E6FE0072DFA4 /* HR_SuiteOperationReplay.m in Sources */,
+				6A0741D31612E6FE0072DFA4 /* HR_SuitePackageProperties.m in Sources */,
+				6A0741D41612E6FE0072DFA4 /* HR_SuitePersonalizationParameters.m in Sources */,
+				6A0741D51612E6FE0072DFA4 /* HR_SuiteSISSubscription.m in Sources */,
+				6A0741D61612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKey.m in Sources */,
+				6A0741D71612E6FE0072DFA4 /* HR_SuiteTimesheet.m in Sources */,
+				6A0741D81612E6FE0072DFA4 /* HR_SuiteTimesheetApprovals.m in Sources */,
+				6A0741D91612E6FE0072DFA4 /* HR_SuiteUsers.m in Sources */,
+				6A0741DA1612E6FE0072DFA4 /* HR_SuiteChangeLogImplMetaData.m in Sources */,
+				6A0741DB1612E6FE0072DFA4 /* HR_SuiteChangeLogKeyMetaData.m in Sources */,
+				6A0741DC1612E6FE0072DFA4 /* HR_SuiteHR_SuiteDBMetaData.m in Sources */,
+				6A0741DD1612E6FE0072DFA4 /* HR_SuiteJobManagementMetaData.m in Sources */,
+				6A0741DE1612E6FE0072DFA4 /* HR_SuiteJobsMetaData.m in Sources */,
+				6A0741DF1612E6FE0072DFA4 /* HR_SuiteKeyGeneratorMetaData.m in Sources */,
+				6A0741E01612E6FE0072DFA4 /* HR_SuiteKeyGeneratorPKMetaData.m in Sources */,
+				6A0741E11612E6FE0072DFA4 /* HR_SuiteKeyPackageNameMetaData.m in Sources */,
+				6A0741E21612E6FE0072DFA4 /* HR_SuiteLeaveRequestsMetaData.m in Sources */,
+				6A0741E31612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorMetaData.m in Sources */,
+				6A0741E41612E6FE0072DFA4 /* HR_SuiteLocalKeyGeneratorPKMetaData.m in Sources */,
+				6A0741E51612E6FE0072DFA4 /* HR_SuiteLogRecordImplMetaData.m in Sources */,
+				6A0741E61612E6FE0072DFA4 /* HR_SuiteOfflineAuthenticationMetaData.m in Sources */,
+				6A0741E71612E6FE0072DFA4 /* HR_SuiteOperationReplayMetaData.m in Sources */,
+				6A0741E81612E6FE0072DFA4 /* HR_SuitePackagePropertiesMetaData.m in Sources */,
+				6A0741E91612E6FE0072DFA4 /* HR_SuitePersonalizationParametersMetaData.m in Sources */,
+				6A0741EA1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionKeyMetaData.m in Sources */,
+				6A0741EB1612E6FE0072DFA4 /* HR_SuiteSISSubscriptionMetaData.m in Sources */,
+				6A0741EC1612E6FE0072DFA4 /* HR_SuiteTimesheetApprovalsMetaData.m in Sources */,
+				6A0741ED1612E6FE0072DFA4 /* HR_SuiteTimesheetMetaData.m in Sources */,
+				6A0741EE1612E6FE0072DFA4 /* HR_SuiteUsersMetaData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A07411A1612E2AA0072DFA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A07411B1612E2AA0072DFA4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A0741291612E2AA0072DFA4 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A07412A1612E2AA0072DFA4 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6A07412C1612E2AA0072DFA4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A07412D1612E2AA0072DFA4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A0741321612E2AA0072DFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A0741331612E2AA0072DFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A0741351612E2AA0072DFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RapidSUP/RapidSUP-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/${PRODUCT_NAME}/iOS/RBS/includes/**";
+				INFOPLIST_FILE = "RapidSUP/RapidSUP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/${PRODUCT_NAME}/iOS/RBS/Libraries/Debug-iphonesimulator",
+					"\"$(SRCROOT)/${PRODUCT_NAME}/iOS/RBS/Libraries/Release-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Debug-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Release-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/RBS/Libraries/Debug-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/RBS/Libraries/Release-iphonesimulator\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A0741361612E2AA0072DFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RapidSUP/RapidSUP-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/${PRODUCT_NAME}/iOS/RBS/includes/**";
+				INFOPLIST_FILE = "RapidSUP/RapidSUP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/${PRODUCT_NAME}/iOS/RBS/Libraries/Release-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Debug-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Release-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/MBS/Libraries/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/RBS/Libraries/Debug-iphoneos\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/RBS/Libraries/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/RapidSUP/iOS/RBS/Libraries/Release-iphonesimulator\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A0741071612E2AA0072DFA4 /* Build configuration list for PBXProject "RapidSUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0741321612E2AA0072DFA4 /* Debug */,
+				6A0741331612E2AA0072DFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0741341612E2AA0072DFA4 /* Build configuration list for PBXNativeTarget "RapidSUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0741351612E2AA0072DFA4 /* Debug */,
+				6A0741361612E2AA0072DFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A0741041612E2AA0072DFA4 /* Project object */;
+}
