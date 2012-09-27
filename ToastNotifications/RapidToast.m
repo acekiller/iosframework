@@ -45,6 +45,9 @@
     [UIView setAnimationDuration:1.5];
     label.alpha = 0.0;
     [UIView commitAnimations];
+    
+    [view bringSubviewToFront:label];
+    [label removeFromSuperview];
 }
 
 +(void)toastWithMessage:(NSString*)message andFrame:(CGRect)frame forView:(UIView*)view
