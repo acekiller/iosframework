@@ -19,6 +19,8 @@
 #import "HR_SuiteLocalKeyGenerator.h"
 #import "SUPSyncStatusInfo.h"
 
+#import "JMC.h" //jira
+
 #define kHR_SuiteDataVaultID @"HR_SuiteDataVaultID"
 #define kHR_SuiteDataVaultSalt @"HR_SuiteDataVaultSalt"
 
@@ -166,7 +168,6 @@
              nil];
     [self.hr_users addObject:entry];
 }
-
 - (void)createHRTasks {
     entry = [NSDictionary dictionaryWithObjectsAndKeys:
              @"Overhead", @"jobName", 
@@ -656,6 +657,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    [[JMC sharedInstance] configureWithOptions:[JMCOptions optionsWithUrl:@"http://68.225.30.194:8100/" projectKey:@"NUVCHSH" apiKey:@"e8525f18-b021-471f-a74d-b92256b87d0d" photos:YES voice:YES location:YES crashReporting:YES notifications:YES customFields:nil]];
+    
+ //   [[JMC sharedInstance]configureJiraConnect:@"http://68.225.30.194:8100/" projectKey:@"NUVCHSH" apiKey:@"e8525f18-b021-471f-a74d-b92256b87d0d"];
+    
+    
+//    [[JMC sharedInstance] configureJiraConnect:@"http://68.225.30.194:8100/"
+//                                    projectKey:@"NUVCHSH"
+//                                        apiKey:@"b84bcd12-1e02-47e9-8954-7e1671b42b55"
+//                                      location:YES
+//                                    dataSource:viewController];
+//    
+//    
+//    
     /* this connects sup when the app runs
       
     // copied from did launch (below).

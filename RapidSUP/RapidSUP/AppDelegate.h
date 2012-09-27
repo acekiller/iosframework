@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "CallbackHandler.h"
 #import "SUPSyncStatusListener.h"
+#import "JMC.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, SUPSyncStatusListener>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, SUPSyncStatusListener, JMCCustomDataSource>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -75,5 +77,7 @@
 - (void)createHRTimesheetApprovals;
 - (void)createHRTimesheet;
 -(NSDictionary *)findByUsername:(NSString *)username;
+
+
 
 @end

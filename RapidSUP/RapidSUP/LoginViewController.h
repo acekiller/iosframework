@@ -17,6 +17,9 @@
 - (IBAction)signInAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *incorrectLoginLabel;
 
+- (IBAction)triggerCreateIssueView:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *nextButtonPressed;
+- (IBAction)nextPressed:(id)sender;
 
 @end

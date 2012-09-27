@@ -13,6 +13,8 @@
 #import "HR_SuiteHR_SuiteDB.h"
 #import "SUPApplication.h"
 
+#import "JMC.h"
+
 @implementation LoginViewController
 {
     AppDelegate *d;
@@ -39,11 +41,18 @@
 
 
 
+
 /****************************************************************************************************
  View Did Load
  ****************************************************************************************************/
 - (void)viewDidLoad
 {
+    self.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+                                                   target:self
+                                                  action:@selector(showFeedback)];
+    
+    
     d = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     d.isSUPConnection = NO;
     revisit = NO;
@@ -63,7 +72,7 @@
     [d createHRTimesheet];
     
     //Retrieving from SUP MBO doesn't work on viewDidLoad because SUP is still making a connection.
-    [self.navigationController setNavigationBarHidden:YES];
+    //[self.navigationController setNavigationBarHidden:YES];
     
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Select a version:" message:nil delegate:self cancelButtonTitle:@"Demo Version" otherButtonTitles:@"Connect to SUP", nil];
     [message setAlertViewStyle:UIAlertViewStyleDefault];
@@ -91,6 +100,11 @@
         [theTextField resignFirstResponder];
     }
     return YES;
+}
+
+-(void) showFeedback
+{
+    [self presentModalViewController:[[JMC sharedInstance] viewController] animated:YES];
 }
 
 
@@ -176,6 +190,20 @@
 }
 
 
+- (NSString *)jiraIssueTypeNameFor:(JMCIssueType)type
+{
+    if (type == JMCIssueTypeCrash) {
+        return @"crash";
+    } else if (type == JMCIssueTypeFeedback) {
+        return @"improvement";
+    }
+    return nil;
+}
 
-
+- (IBAction)triggerCreateIssueView:(id)sender {
+    [self presentModalViewController:[[JMC sharedInstance] issuesViewController] animated:YES];
+}
+- (IBAction)nextPressed:(id)sender {
+    [self performSegueWithIdentifier: @"wrong" sender: self];
+}
 @end
