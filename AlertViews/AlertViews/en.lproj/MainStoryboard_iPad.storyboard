@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwL-wf-WD3">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Custom Alert w/ Title">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalAlertButton:" destination="2" eventType="touchUpInside" id="eNn-j5-V4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXA-Wr-zD9">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Custom Alert w/ Title + Buttons">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonsAlertButton:" destination="2" eventType="touchUpInside" id="Uas-19-EXW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZw-Hg-gT4">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Custom Simple Alert">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="simpleAlertButton:" destination="2" eventType="touchUpInside" id="CsC-IU-q3x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08o-PT-VoE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Default Simple Alert">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultSimpleAlertButton:" destination="2" eventType="touchUpInside" id="bRa-gg-G74"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGI-wf-khn">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Default Alert w/ Title">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultNormalAlertButton:" destination="2" eventType="touchUpInside" id="5nv-HS-sRw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-Qa-WC4">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Default Alert w/ Title + Buttons">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultButtonsAlertButton:" destination="2" eventType="touchUpInside" id="Jvh-ds-Mni"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JXA-Wr-zD9" firstAttribute="top" secondItem="cVH-Qa-WC4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1q2-He-MRQ"/>
+                            <constraint firstItem="TwL-wf-WD3" firstAttribute="trailing" secondItem="JXA-Wr-zD9" secondAttribute="trailing" type="default" id="2Zz-4n-Q7I"/>
+                            <constraint firstItem="cVH-Qa-WC4" firstAttribute="leading" secondItem="qGI-wf-khn" secondAttribute="leading" type="default" id="5MC-X4-pzt"/>
+                            <constraint firstItem="08o-PT-VoE" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="198" id="7g2-up-Ph7"/>
+                            <constraint firstItem="TwL-wf-WD3" firstAttribute="trailing" secondItem="IZw-Hg-gT4" secondAttribute="trailing" type="default" id="H95-V8-O03"/>
+                            <constraint firstAttribute="bottom" secondItem="JXA-Wr-zD9" secondAttribute="bottom" constant="337" id="HJT-MF-fyJ"/>
+                            <constraint firstItem="IZw-Hg-gT4" firstAttribute="top" secondItem="08o-PT-VoE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PTa-cF-QsF"/>
+                            <constraint firstItem="08o-PT-VoE" firstAttribute="leading" secondItem="qGI-wf-khn" secondAttribute="leading" type="default" id="SGj-Bq-CCV"/>
+                            <constraint firstItem="JXA-Wr-zD9" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="231" id="dMD-1h-8qO"/>
+                            <constraint firstItem="qGI-wf-khn" firstAttribute="top" secondItem="5" secondAttribute="top" constant="410" id="efF-vU-rA3"/>
+                            <constraint firstItem="08o-PT-VoE" firstAttribute="top" secondItem="5" secondAttribute="top" constant="247" id="lqO-As-hi8"/>
+                            <constraint firstItem="TwL-wf-WD3" firstAttribute="top" secondItem="qGI-wf-khn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="t8O-PT-ZSD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonsAlertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="defaultButtonsAlertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="defaultNormalAlertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="defaultSimpleAlertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="normalAlertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="simpleAlertButton:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
